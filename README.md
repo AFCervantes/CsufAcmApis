@@ -80,6 +80,31 @@ The API returns weather data in JSON format, which looks like:
 ### 3. Parsing and Displaying
 The program extracts specific values from the JSON response and displays them in a readable format.
 
+## Example Output
+
+When you run the program successfully, you'll see output like this:
+```
+=== Weather API Demo ===
+This program demonstrates how to use Web APIs in C++
+
+Requesting weather data for: Fullerton
+Please wait...
+
+Raw API Response:
+-------------------
+{"location":{"name":"Fullerton","region":"California","country":"USA"},"current":{"temp_c":22.0,"temp_f":71.6,"condition":{"text":"Sunny"},"humidity":45,"wind_kph":12.5}}
+
+Parsed Weather Information:
+-------------------
+Location: Fullerton, California, USA
+Temperature: 22.0°C (71.6°F)
+Conditions: Sunny
+Humidity: 45%
+Wind Speed: 12.5 km/h
+
+=== End of Demo ===
+```
+
 ## Customization
 
 You can modify the program to:
